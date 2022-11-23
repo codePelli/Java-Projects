@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonegro"
+    tools:context=".Activity4">
+
+    <Button
+        android:id="@+id/btnActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:contentDescription="Personajes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/goku"
+                    android:layout_width="250dp"
+                    android:layout_height="157dp"
+                    app:srcCompat="@drawable/goku" />
+
+                <ImageView
+                    android:id="@+id/gohan"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/gohan" />
+
+                <ImageView
+                    android:id="@+id/piccolo"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/piccolo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/krillin"
+                    android:layout_width="250dp"
+                    android:layout_height="157dp"
+                    app:srcCompat="@drawable/krilin" />
+
+                <ImageView
+                    android:id="@+id/vegeta"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/vegetaa" />
+
+                <ImageView
+                    android:id="@+id/frieza"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/frieza" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
